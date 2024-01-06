@@ -1,5 +1,4 @@
 package com.example.fragmentapp
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -7,7 +6,6 @@ import androidx.fragment.app.Fragment
 import com.example.fragmentapp.AFragment
 import com.example.fragmentapp.BFragment
 import com.example.fragmentapp.CFragment
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,6 +21,9 @@ class MainActivity : AppCompatActivity() {
         val fragment2 = BFragment()
         val fragment3 = CFragment()
 
+        button1 = findViewById(R.id.button1)
+        button2 = findViewById(R.id.button2)
+        button3 = findViewById(R.id.button3)
 
         button1.setOnClickListener {
             replaceFragment(fragment1)
